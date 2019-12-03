@@ -68,7 +68,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', default='./', type=str)
     parser.add_argument('--save_dir', default='./', type=str)
-    parser.add_argument('--dataset_type', default='MNIST', type=str)
+    parser.add_argument('--dataset_type', default='MNIST', type=str, choices=['MNIST', 'FashionMNIST'])
     parser.add_argument('--batch_size', default=128, type=int) 
     parser.add_argument('--alpha', default=0.1, type=float) 
     parser.add_argument('--num_original', default=50, type=int) 

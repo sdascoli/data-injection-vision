@@ -39,7 +39,6 @@ def plot_conditional_generation(model, save_as=None, labels=range(10), n_per_lab
 
     plt.axis('off')
     plt.tight_layout()
-
     if save_as:
         plt.savefig(save_as)
     
